@@ -71,3 +71,17 @@ main{max-width:1200px;margin:28px auto}.chapter{background:#fff;padding:30px 58p
 @media screen and (min-width:601px){#marketing .creative-revision{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:0}#marketing .creative-revision>div{padding:12px 10px}#marketing .creative-revision .revised p{font-size:14px}#marketing .creative-options{margin-bottom:0}}
 @media(max-width:600px){#marketing .marketing-balanced{grid-template-rows:none;row-gap:27px}#marketing .marketing-balanced>article{display:block;grid-row:auto}#marketing .marketing-outcome{margin-top:18px!important}}
 @media print{#marketing .marketing-balanced{row-gap:4mm}#marketing .creative-story .creative-revision{grid-template-columns:repeat(3,minmax(0,1fr));gap:2mm;margin:3mm 0 0}#marketing .creative-story .creative-revision>div{padding:2mm}#marketing .creative-revision .revised p{font-size:9pt}#marketing .creative-options{margin-bottom:0}#marketing .creative-story .marketing-outcome{margin-top:0!important}}
+
+/* Requested report navigation and two-step creative revision. */
+.figure-caption .report-open{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:12px;padding:13px 16px;border:1px solid #b5cdf6;background:#eaf2ff;color:#205cc5;font-size:14px;font-weight:650;text-decoration:none}
+.report-open:hover,.report-open:focus-visible{background:#dceaff;border-color:var(--blue);outline:2px solid var(--blue);outline-offset:2px}
+.report-state{display:block;color:var(--blue);font-size:11px;margin-bottom:6px}
+.report-next .report-next-copy{font-size:14px;color:#214c91}
+.report-followup{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.report-followup h3{font-size:16px;margin-bottom:7px}
+.report-followup p{font-size:13px;line-height:1.85}
+#marketing .creative-revision-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.figure-caption .report-open{font-size:13px;padding:13px 14px}.report-next .report-next-copy{font-size:12px}#marketing .creative-revision-two{grid-template-columns:1fr}.report-followup p{font-size:14px}}
+@media print{.figure-caption .report-open{display:flex;font-size:8pt;margin-top:2mm;padding:2mm 3mm}.report-state{font-size:7pt;margin-bottom:1mm}.report-next .report-next-copy{font-size:9pt}.report-followup{margin-top:3mm;padding-top:2mm}.report-followup h3{font-size:9pt;margin-bottom:1mm}.report-followup p{font-size:8pt;line-height:1.7}#reporting .linked-reports .report-full{height:40mm}#marketing .creative-story .creative-revision-two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+@media print{#reporting h2{font-size:22pt}#reporting .linked-reports .report-full{height:31mm}#reporting .reporting-intro{font-size:8.5pt;line-height:1.65;margin-bottom:2mm}#reporting .report-followup{margin-top:2mm;padding-top:2mm}#reporting .report-followup h3{font-size:8.5pt}#reporting .report-followup p{font-size:7.5pt;line-height:1.65}}
